@@ -1,2 +1,2 @@
-# java-restful-plugin
-Java Restful Eclipse Plugin for Java Web Projects
+# RESTfulPlugin
+RESTfulPlugin - Eclipse Plugin

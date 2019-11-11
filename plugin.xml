@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         point="org.eclipse.ui.editors">
+      <editor
+            name="RESTful Webservice"
+            extensions="java"
+            icon="icons/sample.gif"
+            contributorClass="com.credlylabs.rest.RESTfulWebserviceContributor"
+            class="com.credlylabs.rest.RESTfulWebservice"
+            id="com.credlylabs.rest.RESTfulWebservice">
+      </editor>
+   </extension>
+   <extension
+         point="org.eclipse.ui.newWizards">
+      <category
+            name="RESTful Webservice"
+            id="RESTfulPlugin">
+      </category>
+      <wizard
+            name="Jersey RESTful Webservice"
+            icon="icons/jersey64x.png"
+            category="RESTfulPlugin"
+            class="restfulplugin.wizards.jersey.RESTfulWebserviceWizard"
+            id="restfulplugin.wizards.jersey.RESTfulWebserviceWizard">
+      </wizard>
+       <wizard
+            name="Restlet RESTful Webservice"
+            icon="icons/restlet96x.png"
+            category="RESTfulPlugin"
+            class="restfulplugin.wizards.restlet.RestletWebserviceWizard"
+            id="restfulplugin.wizards.restlet.RestletWebserviceWizard">
+      </wizard>
+      <wizard
+            name="RESTEasy RESTful Webservice"
+            icon="icons/resteasy64x.png"
+            category="RESTfulPlugin"
+            class="restfulplugin.wizards.resteasy.RESTEasyWebserviceWizard"
+            id="restfulplugin.wizards.resteasy.RESTEasyWebserviceWizard">
+      </wizard>
+      <wizard
+            name="Spring RESTful Webservice"
+            icon="icons/spring86x.png"
+            category="RESTfulPlugin"
+            class="restfulplugin.wizards.spring.SpringWebserviceWizard"
+            id="restfulplugin.wizards.spring.SpringWebserviceWizard">
+      </wizard>
+   </extension>
+
+</plugin>
